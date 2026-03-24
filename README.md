@@ -26,17 +26,6 @@ A professional extension for phpList that adds a dedicated **Preheader** (Previe
 
 *\*Note: Some clients marked with "No" do not have a dedicated preheader field but will simply display the first few words of the email body. In these cases, the "External Sender" warning often displaces the intended preheader.*
 
-## Important Factors
-
-### 1. The "First Text" Rule
-Email clients scan the HTML from the top down. If your mail server or gateway injects a security warning (e.g., "CAUTION: External Sender") at the very top of the `<body>`, this warning will likely override your preheader in the inbox view.
-
-### 2. Invisible Padding
-This plugin automatically appends a string of non-breaking spaces (`&nbsp;&zwnj;`) to your text. This "fills up" the preview area in generous clients like Outlook, preventing footer links or "Unsubscribe" buttons from leaking into the preview.
-
-### 3. Subject Line Length
-In clients like Gmail, the Subject and Preheader share the same line. A very long Subject line will hide your Preheader regardless of its length.
-
 ---
 
 ## Installation
